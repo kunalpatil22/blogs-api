@@ -58,7 +58,7 @@ const updateBlog = async (req, res) => {
 
     await blog.save();
 
-    res.status(200).send({
+    res.status(201).send({
       message: "Blog updated successfully.",
       data: blog,
     });

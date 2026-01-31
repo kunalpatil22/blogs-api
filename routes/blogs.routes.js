@@ -17,9 +17,15 @@ router.get("/", blogsController.getBlogs);
 
 /**
  * @swagger
- * /api/blogs/:id:
+ * /api/blogs/{id}:
  *   get:
- *     summary: Get a blog using ID
+ *     summary: Get blog using ID
+ *     parameters:
+ *      - in: path
+ *        name: id
+ *        required: true
+ *        schema:
+ *          type: string
  *     responses:
  *       200:
  *         description: A single blog
@@ -53,9 +59,15 @@ router.post("/", blogsController.createBlog);
 
 /**
  * @swagger
- * /api/blogs/:id:
+ * /api/blogs/{id}:
  *   put:
  *     summary: Update a blog
+ *     parameters:
+ *      - in: path
+ *        name: id
+ *        required: true
+ *        schema:
+ *          type: string
  *     requestBody:
  *       required: true
  *       content:
@@ -75,9 +87,15 @@ router.put("/:id", blogsController.updateBlog);
 
 /**
  * @swagger
- * /api/blogs/:id:
+ * /api/blogs/{id}:
  *   delete:
  *     summary: Delete a blog using ID
+ *     parameters:
+ *      - in: path
+ *        name: id
+ *        required: true
+ *        schema:
+ *          type: string
  *     responses:
  *       200:
  *         description: Blog deleted

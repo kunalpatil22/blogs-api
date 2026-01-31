@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const mongoose = require("mongoose");
 const swaggerUI = require("swagger-ui-express");
 const swaggerSpec = require("./swagger.js");
@@ -12,10 +13,11 @@ const app = express();
 
 app.set("trust proxy", true);
 
+app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 app.use("/api/blogs", blogsRoutes);
-app.use("/api/docs", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
+app.use("/docs", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 
 mongoose
   .connect(mongo_uri)

@@ -1,6 +1,6 @@
 # Blogs API
 
-A RESTful Blogs API made with Node.js, Express and MongoDB with full CRUD operation capabilities with request validation and API documentation.
+A RESTful Blogs API made with Node.js, Express and MongoDB. Fully documented using Swagger UI.
 
 ## Features
 
@@ -19,7 +19,7 @@ A RESTful Blogs API made with Node.js, Express and MongoDB with full CRUD operat
 ## Live demo
 
 - **API**: https://blogs-api-k2hx.onrender.com/api/blogs
-- **Docs**: https://blogs-api-k2hx.onrender.com/api/docs
+- **Docs**: https://blogs-api-k2hx.onrender.com/docs
 
 ## API Endpoints
 
@@ -81,7 +81,7 @@ npm start
 ### Local demo
 
 - **API**: http://127.0.0.1:8080/api/blogs
-- **Docs**: http://127.0.0.1:8080/api/docs
+- **Docs**: http://127.0.0.1:8080/docs
 
 ## Future Improvements
 
