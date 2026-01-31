@@ -18,8 +18,6 @@ A RESTful Blogs API made with Node.js, Express and MongoDB with full CRUD operat
 
 ## Live demo
 
-Coming soon
-
 ## API Endpoints
 
 | Method | Endpoint       | Description       |
@@ -79,8 +77,8 @@ npm start
 
 ### Local demo
 
-- **API**: http://127.0.0.1:8080/api/blogs
-- **Docs**: http://127.0.0.1:8080/api/docs
+- **API**: https://blogs-api-k2hx.onrender.com/api/blogs
+- **Docs**: https://blogs-api-k2hx.onrender.com/api/docs
 
 ## Future Improvements
 
