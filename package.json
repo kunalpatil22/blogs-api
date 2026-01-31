@@ -1,0 +1,20 @@
+{
+  "name": "blogs-api",
+  "version": "1.0.0",
+  "description": "A simple REST API for managing blogs.",
+  "license": "MIT",
+  "author": "Kunal Patil",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --env-file=.env .",
+    "dev": "node --env-file=.env --watch ."
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "joi": "^18.0.2",
+    "mongoose": "^9.1.5",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
